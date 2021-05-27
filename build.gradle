@@ -1,0 +1,16 @@
+plugins {
+    id 'war'
+}
+    
+group = 'com.jobits.pos.client.rest'
+version = '0.0.1'
+description = 'JoBits POS REST:Application'
+
+dependencies {
+    implementation project(':ReservaRestClient')
+    implementation project(':CoreRestClient')
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	
+}
+
+
