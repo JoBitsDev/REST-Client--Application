@@ -9,6 +9,7 @@ description = 'JoBits POS REST:Application'
 dependencies {
     implementation project(':ReservaRestClient')
     implementation project(':CoreRestClient')
+    implementation project(':Commons')
     providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	
 }
