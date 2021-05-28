@@ -11,11 +11,10 @@ import org.springframework.context.annotation.ComponentScan;
     ReservaRESTClientConfig.BASE_PACKAGE,
     CoreRESTClientConfig.BASE_PACKAGE,
     "com.jobits.pos.client.rest"})
-    })
 public class JoBitsApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(JoBitsApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(JoBitsApplication.class, args);
+    }
 
 }
