@@ -10,6 +10,7 @@ dependencies {
     implementation project(':ReservaRestClient')
     implementation project(':CoreRestClient')
     implementation project(':Commons')
+    implementation project(':Tennant')
     implementation 'org.jobits.db:org.jobits.db.versioncontrol:1.+'
     providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	

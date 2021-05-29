@@ -3,7 +3,9 @@ package com.jobits.pos.client.rest;
 import org.jobits.db.core.module.DataVersionControlModule;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ServletInitializer extends SpringBootServletInitializer {
 
     @Override

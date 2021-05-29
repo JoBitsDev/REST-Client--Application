@@ -13,21 +13,20 @@ import org.springframework.web.server.ResponseStatusException;
 @RestController
 public class SiteInfoRestEndpoint {
 
-	private final SiteInfoModelAssembler assembler;
+    private final SiteInfoModelAssembler assembler;
 
-	public SiteInfoRestEndpoint(SiteInfoModelAssembler assembler) {
-		this.assembler = assembler;
+    public SiteInfoRestEndpoint(SiteInfoModelAssembler assembler) {
+        this.assembler = assembler;
 
-	}
+    }
 
-	@GetMapping("/info")
-	public EntityModel<SiteInfo> info() {
-		return assembler.toModel(SiteInfo.INSTANCE);
-	}
+    @GetMapping("/info")
+    public EntityModel<SiteInfo> info() {
+        return assembler.toModel(SiteInfo.INSTANCE);
+    }
 
-
-	@GetMapping("/error")
-	public EntityModel<SiteInfo> error() {
-		throw new ResponseStatusException(HttpStatus.NOT_FOUND,"error");
-	}
+    @GetMapping("/error")
+    public EntityModel<SiteInfo> error(){
+        throw new ResponseStatusException(HttpStatus.NOT_FOUND, "error");
+    }
 }
