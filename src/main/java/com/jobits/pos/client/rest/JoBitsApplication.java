@@ -1,18 +1,17 @@
 package com.jobits.pos.client.rest;
 
-import com.jobits.pos.client.tennant.rest.TennantRESTClientConfig;
+import org.jobits.pos.client.tennant.rest.TennantRESTClientConfig;
 import com.jobits.pos.core.client.rest.CoreRESTClientConfig;
 import com.jobits.pos.reserva.client.rest.ReservaRESTClientConfig;
-import org.jobits.db.core.module.DataVersionControlModule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {
+    TennantRESTClientConfig.BASE_PACKAGE,
     ReservaRESTClientConfig.BASE_PACKAGE,
     CoreRESTClientConfig.BASE_PACKAGE,
-    TennantRESTClientConfig.BASE_PACKAGE,
     JoBitsApplication.BASE_PACKAGE
 })
 public class JoBitsApplication {
