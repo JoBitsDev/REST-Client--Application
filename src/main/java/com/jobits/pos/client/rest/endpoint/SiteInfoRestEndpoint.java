@@ -24,6 +24,10 @@ public class SiteInfoRestEndpoint {
     public EntityModel<SiteInfo> info() {
         return assembler.toModel(SiteInfo.INSTANCE);
     }
+    @GetMapping("/api")
+    public EntityModel<SiteInfo> apiInfo() {
+        return assembler.toModel(SiteInfo.INSTANCE);
+    }
 
     @GetMapping("/error")
     public EntityModel<SiteInfo> error(){
