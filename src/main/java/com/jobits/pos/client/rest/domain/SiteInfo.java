@@ -19,7 +19,7 @@ import java.util.Map;
  */
 public class SiteInfo {//TODO: cada modulo debe agregar al siteinfor general su informacion y solo existir un siteinfo como servicio
 
-	private final int Mayor_Version = 8;
+	private final int Mayor_Version = 7;
 
 	private final int Minor_Version = 0;
 

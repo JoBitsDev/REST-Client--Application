@@ -1,0 +1,32 @@
+{
+  "ubicaciones" : [ {
+    "nombreUbicacion" : "<Nueva Ubicacion>",
+    "url" : "0.0.0.0",
+    "usuario" : "Nueva",
+    "contrasena" : "Nueva",
+    "driver" : "Nueva",
+    "tipoUbicacion" : "DESACTIVADA"
+  }, {
+    "nombreUbicacion" : "<Nueva Ubicacion>",
+    "url" : "0.0.0.0",
+    "usuario" : "Nueva",
+    "contrasena" : "Nueva",
+    "driver" : "Nueva",
+    "tipoUbicacion" : "DESACTIVADA"
+  }, {
+    "nombreUbicacion" : "<Nueva Ubicacion>",
+    "url" : "0.0.0.0",
+    "usuario" : "Nueva",
+    "contrasena" : "Nueva",
+    "driver" : "Nueva",
+    "tipoUbicacion" : "DESACTIVADA"
+  }, {
+    "nombreUbicacion" : "<Nueva Ubicacion>",
+    "url" : "0.0.0.0",
+    "usuario" : "Nueva",
+    "contrasena" : "Nueva",
+    "driver" : "Nueva",
+    "tipoUbicacion" : "DESACTIVADA"
+  } ],
+  "selectedUbicacion" : 0
+}
