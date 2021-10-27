@@ -1,0 +1,5 @@
+12:12:27 p. m._AGREGAR_Camaron (40.0null)_1.0
+12:12:31 p. m._AGREGAR_Camaron (40.0null)_1.0
+12:12:42 p. m._AGREGAR_Camaron (40.0null)_1.0
+12:13:04 p. m._AGREGAR_Camaron (40.0null)_1.0
+12:45:22 p. m._AGREGAR_Cerveza Hollandia (75.0null)_1.0
