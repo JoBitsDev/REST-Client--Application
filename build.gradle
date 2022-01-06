@@ -3,11 +3,10 @@ plugins {
 }
  
 group = 'com.jobits.pos.client.rest'
-version = '0.0.1'
+version = '1.1.0'
 description = 'JoBits POS REST:Application'
 
 dependencies {
-   // implementation 'org.jobits.db:org.jobits.db.versioncontrol:1.1.11'
     implementation project(':ReservaRestClient')
     implementation project(':CoreRestClient')
     implementation project(':Commons')
