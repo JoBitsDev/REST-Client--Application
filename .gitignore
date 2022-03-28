@@ -142,3 +142,5 @@ gradle-app.setting
 *.txt
 
 lic.key
+
+tennant_def_conn_props.properties
