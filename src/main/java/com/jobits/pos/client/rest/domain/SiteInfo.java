@@ -9,68 +9,62 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- *
  * JoBits
  *
  * @author Jorge
- *
  */
 public class SiteInfo {//TODO: cada modulo debe agregar al siteinfor general su informacion y solo existir un siteinfo como servicio
 
-	private final int Mayor_Version = 8;
+    public static final SiteInfo INSTANCE = new SiteInfo();
+    private final int Mayor_Version = 9;
+    private final int Minor_Version = 0;
+    private final int Patch_Version = 0;
+    private final Map<String, String> endpointMap = new HashMap<>();
 
-	private final int Minor_Version = 0;
+    private SiteInfo() {
+        for (EndpointMap v : EndpointMap.values()) {
+            endpointMap.put(v.getNombre(), v.getPath());
+        }
+    }
 
-	private final int Patch_Version = 0;
+    public static SiteInfo getINSTANCE() {
+        return INSTANCE;
+    }
 
-	public static final SiteInfo INSTANCE = new SiteInfo();
+    public int getMayor_Version() {
+        return Mayor_Version;
+    }
 
-	private final Map<String, String> endpointMap = new HashMap<>();
+    public int getMinor_Version() {
+        return Minor_Version;
+    }
 
-	private SiteInfo() {
-		for (EndpointMap v : EndpointMap.values()) {
-			endpointMap.put(v.getNombre(), v.getPath());
-		}
-	}
+    public int getPatch_Version() {
+        return Patch_Version;
+    }
 
-	public int getMayor_Version() {
-		return Mayor_Version;
-	}
+    public Map<String, String> getEndpointMap() {
+        return endpointMap;
+    }
 
-	public int getMinor_Version() {
-		return Minor_Version;
-	}
+    public enum EndpointMap {
+        ORDEN("Ordenes", "/orden");
 
-	public int getPatch_Version() {
-		return Patch_Version;
-	}
+        private final String nombre, path;
 
-	public static SiteInfo getINSTANCE() {
-		return INSTANCE;
-	}
+        private EndpointMap(String nombre, String path) {
+            this.nombre = nombre;
+            this.path = path;
+        }
 
-	public Map<String, String> getEndpointMap() {
-		return endpointMap;
-	}
+        public String getNombre() {
+            return nombre;
+        }
 
-	public enum EndpointMap {
-		ORDEN("Ordenes", "/orden");
+        public String getPath() {
+            return path;
+        }
 
-		private final String nombre, path;
-
-		private EndpointMap(String nombre, String path) {
-			this.nombre = nombre;
-			this.path = path;
-		}
-
-		public String getNombre() {
-			return nombre;
-		}
-
-		public String getPath() {
-			return path;
-		}
-
-	}
+    }
 
 }
